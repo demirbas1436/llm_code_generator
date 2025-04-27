@@ -38,7 +38,7 @@ Bu komutlar, GitHub’daki kodu bilgisayara çeker ve proje klasörüne geçiş 
 pip install -r requirements.txt
 ```
 
-💡 Ollama Modelini Kurma ve Çalıştırma
+#### 💡 Ollama Modelini Kurma ve Çalıştırma.  
 📌 Yerel LLM modeli olan Ollama’yı yüklemek için:
 
 ```sh
@@ -50,7 +50,7 @@ ollama serve
 ✅ Bu komutlar Ollama’yı indirir ve çalıştırır.
 📌 Eğer Ollama kurulu değilse, Flask uygulaması çalışmayacaktır!
 
-🐳 Docker ile Çalıştırma
+#### 🐳 Docker ile Çalıştırma.  
 📌 Docker kullanarak projeyi çalıştırmak için:
 
 ```sh
@@ -59,36 +59,40 @@ docker run -p 5000:5000 myapp
 ```
 ✅ Bu komutlar, Docker imajını oluşturur ve Flask API’yi başlatır.
 
+
+
 🚀 Şimdi tarayıcıda şu adresi açıp test edilebilir:
 ```sh
 http://127.0.0.1:5000
 ```
 
-☸️ Kubernetes Üzerinde Çalıştırma
+#### ☸️ Kubernetes Üzerinde Çalıştırma.  
 📌 Kubernetes ortamında çalıştırmak için Minikube başlat:
 ```sh
 minikube start
 ```
+
 ✅ Bu, Kubernetes’i yerel ortamda başlatır.
 
-📌 Deployment ve servis dosyalarını çalıştır:
+#### 📌 Deployment ve servis dosyalarını çalıştır:
 ```sh
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
 
 ✅ Bu komutlar, Kubernetes podlarını ve servisini oluşturur.
-📌 Çalışan podları kontrol et:
+
+#### 📌 Çalışan podları kontrol et:
 ```sh
 kubectl get pods
 ```
 
-📌 Servis durumunu kontrol et:
+#### 📌 Servis durumunu kontrol et:
 ```sh
 kubectl get services
 ```
 
-🌐 Minikube Servisini Açma ve Test Etme.  
+#### 🌐 Minikube Servisini Açma ve Test Etme.  
 
 📌 Minikube üzerinde servisin çalıştığını kontrol etmek için:
 ```sh
