@@ -57,6 +57,11 @@ ollama serve
 docker build -t myapp .
 docker run -p 5000:5000 myapp
 ```
+
+```sh
+docker pull demirbas1436/myapp:v1
+docker run -p 5000:5000 demirbas1436/myapp:v1
+```
 ✅ Bu komutlar, Docker imajını oluşturur ve Flask API’yi başlatır.
 
 
@@ -65,6 +70,7 @@ docker run -p 5000:5000 myapp
 ```sh
 http://127.0.0.1:5000
 ```
+
 
 #### ☸️ Kubernetes Üzerinde Çalıştırma.  
 📌 Kubernetes ortamında çalıştırmak için Minikube başlat:
