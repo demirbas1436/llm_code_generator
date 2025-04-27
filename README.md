@@ -105,5 +105,5 @@ minikube tunnel
 ✅ Servise erişmek için Minikube’den URL al:(diğer terminalden çalıştırılır.)
 ```sh
 minikube service flask-service --url
-
+```
 🚀 Çıkan URL’yi tarayıcıya yaz
