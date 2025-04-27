@@ -4,7 +4,7 @@ FROM python:3.12.4
 # Çalışma dizinini belirle
 WORKDIR /app
 
-# Bağımlılıkları yükle (Eğer "requirements.txt" varsa)
+# Bağımlılıkları yükle (klasördeki "requirements.txt")
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
