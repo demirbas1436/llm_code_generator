@@ -29,6 +29,7 @@ Bu projeyi çalıştırabilmek için aşağıdaki araçların sistemde yüklü o
 ```sh
 git clone https://github.com/KULLANICI_ADIN/proje-adi.git
 cd proje-adi
+```
 
 Bu komutlar, GitHub’daki kodu bilgisayara çeker ve proje klasörüne geçiş yapar.
 
