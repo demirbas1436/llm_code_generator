@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kod Üretici</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 600px; margin: auto; padding: 20px; }
+        .result-box { margin-top: 20px; padding: 15px; border: 1px solid #ccc; background: #f9f9f9; }
+        .score { font-weight: bold; color: #d9534f; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kod Üreticiye Hoş Geldiniz!</h1>
+        <form action="/generate" method="post">
+            <label>Kod türünü girin:</label>
+            <input type="text" name="prompt" required>
+            <button type="submit">Kod Üret</button>
+        </form>
+
+        {% if title %}
+        <div class="result-box">
+            <h2>Kod Başlığı:</h2>
+            <p><strong>{{ title }}</strong></p>
+        </div>
+        {% endif %}
+
+        {% if result %}
+        <div class="result-box">
+            <h2>Üretilen Kod:</h2>
+            <code>{{ result | safe }}</code>
+        </div>
+        {% endif %}
+
+
+
+        {% if score %}
+        <div class="result-box">
+            <h2>Skor:</h2>
+            <p class="score">{{ score }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
