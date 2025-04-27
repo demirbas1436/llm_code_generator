@@ -88,7 +88,7 @@ kubectl get pods
 kubectl get services
 ```
 
-🌐 Minikube Servisini Açma ve Test Etme
+🌐 Minikube Servisini Açma ve Test Etme.  
 
 📌 Minikube üzerinde servisin çalıştığını kontrol etmek için:
 ```sh
